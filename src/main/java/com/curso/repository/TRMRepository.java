@@ -31,7 +31,7 @@ public class TRMRepository {
     public TRM getUltimaTRM() {
         List<TRM> trms = getAllTRMs();
         if (!trms.isEmpty()) {
-            return trms.get(trms.size() - 1);
+            return trms.get(0);
         }
         return null;
     }
